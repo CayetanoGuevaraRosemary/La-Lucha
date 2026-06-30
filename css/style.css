@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;600;700&display=swap');
+
+:root{
+  --rojo:#a8121a;
+  --negro:#1a1a1a;
+  --crema:#f7f3ec;
+}
+
+body{
+  font-family:'Playfair Display',serif;
+  background:var(--crema);
+  color:var(--negro);
+}
+
+h1,h2,h3,.brand-font{
+  font-family:'Bebas Neue',sans-serif;
+  letter-spacing:1px;
+}
+
+/* HEADER */
+.navbar-lucha{
+  background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.25));
+  border-bottom:1px solid rgba(255,255,255,.1);
+  transition:.3s;
+  padding:35px 0;
+  backdrop-filter:blur(2px);
+}
+.navbar-lucha.navbar-solida{
+  background:var(--negro);
+  border-bottom:4px solid var(--rojo);
+  box-shadow:0 2px 10px rgba(0,0,0,.3);
+  padding:12px 0;
+}
+.logo-circulo{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  background:var(--negro);
+  border:4px solid var(--rojo);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  z-index:5;
+  transition:.3s;
+}
+.navbar-solida .logo-circulo{ width:68px; height:68px; }
+.logo-circulo img{ width:78%; height:78%; object-fit:contain; }
+@media (max-width:991px){
+  .navbar-collapse{ background:var(--negro); margin-top:10px; border-radius:8px; padding:10px 15px; }
+}
+.navbar-lucha .nav-link{
+  color:#fff !important;
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.15rem;
+  letter-spacing:1px;
+}
+.navbar-lucha .nav-link:hover{ color:var(--rojo) !important; }
+body{ padding-top:0; }
+
+/* HERO */
+.hero{
+  background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)), url('https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=1400') center/cover no-repeat;
+  color:#fff;
+  padding:200px 0 110px;
+  text-align:center;
+}
+.page-spacer{ padding-top:180px; }
+.hero h1{ font-size:4rem; color:var(--rojo); text-shadow:2px 2px 4px #000;}
+.hero p{ font-size:1.3rem; }
+
+.btn-lucha{
+  background:var(--rojo);
+  color:#fff;
+  border:none;
+  font-family:'Bebas Neue',sans-serif;
+  letter-spacing:1px;
+  padding:10px 28px;
+}
+.btn-lucha:hover{ background:#7d0e14; color:#fff; }
+
+/* SECTIONS */
+section{ padding:60px 0; }
+.titulo-seccion{
+  color:var(--rojo);
+  text-align:center;
+  margin-bottom:40px;
+  position:relative;
+}
+.titulo-seccion::after{
+  content:"";
+  display:block;
+  width:80px;
+  height:3px;
+  background:var(--negro);
+  margin:10px auto 0;
+}
+
+/* CARDS */
+.card-lucha{
+  border:1px solid #e3dccf;
+  border-radius:10px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 3px 10px rgba(0,0,0,.08);
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  transition:transform .2s;
+}
+.card-lucha:hover{ transform:translateY(-4px); }
+.card-lucha .card-img-wrap{
+  height:170px;
+  background:#eee2d2;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+.card-lucha .card-img-wrap img{ width:100%; height:100%; object-fit:cover; }
+.card-lucha .card-img-wrap .img-placeholder{ color:#b6a98e; font-size:.85rem; text-align:center; }
+.card-lucha .card-body{
+  padding:16px;
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+.card-lucha .card-title{
+  font-family:'Bebas Neue',sans-serif;
+  letter-spacing:1px;
+  font-size:1.25rem;
+  color:var(--negro);
+  margin-bottom:6px;
+}
+.card-lucha .card-desc{
+  font-size:.88rem;
+  color:#666;
+  flex:1;
+  margin-bottom:12px;
+}
+.card-lucha .card-footer-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-top:1px solid #f0ece2;
+  padding-top:12px;
+}
+.precio{
+  color:var(--rojo);
+  font-weight:700;
+  font-size:1.1rem;
+}
+.btn-add{
+  background:var(--negro);
+  color:#fff;
+  border:none;
+  font-size:.85rem;
+  padding:7px 14px;
+  border-radius:5px;
+}
+.btn-add:hover{ background:var(--rojo); color:#fff; }
+
+/* FOOTER */
+.footer-lucha{
+  background:var(--negro);
+  color:#f1f1f1;
+  padding:40px 0 15px;
+  border-top:4px solid var(--rojo);
+}
+.footer-lucha h5{
+  color:var(--rojo);
+  font-family:'Bebas Neue',sans-serif;
+}
+.footer-lucha a{ color:#f1f1f1; text-decoration:none; }
+.footer-lucha a:hover{ color:var(--rojo); }
+.footer-lucha .copy{
+  border-top:1px solid #444;
+  margin-top:25px;
+  padding-top:15px;
+  font-size:.85rem;
+  text-align:center;
+  color:#aaa;
+}
+
+.galeria-img{
+  height:160px;
+  object-fit:cover;
+  border-radius:8px;
+  box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+.premio-box{
+  background:#fff;
+  border:1px solid #e3dccf;
+  border-left:4px solid var(--rojo);
+  border-radius:6px;
+  padding:16px;
+  height:100%;
+}
+.premio-box .emoji{ font-size:2.2rem; color:var(--rojo); display:block; }
+
+.tab-cat{
+  background:#fff;
+  border:1px solid var(--negro);
+  color:var(--negro);
+  font-family:'Bebas Neue',sans-serif;
+  letter-spacing:1px;
+  padding:8px 22px;
+  border-radius:30px;
+  transition:.2s;
+}
+.tab-cat.active, .tab-cat:hover{
+  background:var(--rojo);
+  border-color:var(--rojo);
+  color:#fff;
+}
+
+.mapa-item{
+  background:#fff;
+  border-left:4px solid var(--rojo);
+  padding:10px 15px;
+  margin-bottom:10px;
+  border-radius:4px;
+  transition:.2s;
+}
+.mapa-item:hover{ background:#f3ece2; }
+.mapa-activo{ background:var(--rojo); color:#fff; }
+.mapa-activo i{ color:#fff !important; }
