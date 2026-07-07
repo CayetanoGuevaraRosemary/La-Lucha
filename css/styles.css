@@ -68,11 +68,7 @@ body{
 .nav-link:hover{ color:var(--rojo) !important; }
 
 .hero{
-<<<<<<< HEAD
     background:linear-gradient(rgba(20,0,0,.6),rgba(20,0,0,.75)), url('https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=1400') center/cover;
-=======
-    background:linear-gradient(rgba(20,0,0,.6),rgba(20,0,0,.75)), url('../image/banner.jpg') center/cover;
->>>>>>> f9b34552bb6dfb920535e434a6c823226e817493
     color:#fff;
     text-align:center;
     padding:180px 0 120px;
