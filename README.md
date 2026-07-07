@@ -25,22 +25,13 @@ Cabe destacar que este proyecto es unicamente una propuesta de diseno de interfa
 ## Estructura del proyecto
 
 ```
-lalucha/
+La Lucha/
 ├── index.html
-├── nosotros.html
-├── servicios.html
-├── ubicanos.html
-├── login.html
-├── contacto.html
 ├── css/
-│   └── style.css
+│   └── styles.css
 ├── js/
-│   ├── header.js
-│   ├── footer.js
-│   └── productos.js
-└── img/
-    ├── logo.svg
-    └── favicon.png
+│   └── config.js
+└── image/
 ```
 
 ## Como ejecutarlo
