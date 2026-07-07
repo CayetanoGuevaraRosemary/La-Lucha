@@ -48,7 +48,6 @@ function pintarCategoria(cat){
           <div class="card-desc">${p[1]}</div>
           <div class="card-footer-row">
             <span class="precio">S/${p[2].toFixed(2)}</span>
-            <button class="btn-add" onclick="addToCart('${p[0]}',${p[2]})">+ Agregar</button>
           </div>
         </div>
       </div>

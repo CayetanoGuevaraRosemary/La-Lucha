@@ -10,7 +10,6 @@ El proyecto incluye las siguientes secciones:
 - Nosotros: historia del restaurante y reconocimientos obtenidos.
 - Carta: catalogo de productos organizado por categorias (sandwiches, papas, bebidas).
 - Ubicanos: listado de locales en Peru, Colombia, Chile y Mexico con mapa interactivo.
-- Carrito: interfaz de carrito de compras con almacenamiento local en el navegador.
 - Login: interfaz de inicio de sesion.
 - Contacto: formulario de contacto.
 
@@ -31,7 +30,6 @@ lalucha/
 ├── nosotros.html
 ├── servicios.html
 ├── ubicanos.html
-├── carrito.html
 ├── login.html
 ├── contacto.html
 ├── css/
@@ -39,7 +37,6 @@ lalucha/
 ├── js/
 │   ├── header.js
 │   ├── footer.js
-│   ├── cart.js
 │   └── productos.js
 └── img/
     ├── logo.svg

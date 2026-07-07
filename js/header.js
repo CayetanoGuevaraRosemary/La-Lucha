@@ -15,9 +15,6 @@ document.write(`
         <li class="nav-item"><a class="nav-link" data-link="servicios" href="servicios.html">Carta</a></li>
         <li class="nav-item"><a class="nav-link" data-link="contacto" href="contacto.html">Contacto</a></li>
         <li class="nav-item"><a class="nav-link" data-link="login" href="login.html">Ingresar</a></li>
-        <li class="nav-item"><a class="nav-link position-relative" data-link="carrito" href="carrito.html">
-          <i class="material-icons align-middle" style="font-size:1.1rem">shopping_cart</i> Carrito <span id="cartBadge" class="badge bg-danger rounded-pill ms-1">0</span>
-        </a></li>
       </ul>
     </div>
   </div>
