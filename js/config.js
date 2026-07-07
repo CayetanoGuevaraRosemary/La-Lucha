@@ -1,22 +1,22 @@
 var menu = {
   sandwiches: [
     ["Pavo a la Leña","Pavo jugoso asado a la leña con toque criollo.",16.90,"image/sandwich1.jpg"],
-    ["Lechón a la Leña","Lechón cocido lentamente, jugoso y crocante.",16.90,"image/sandwich1.jpg"],
-    ["Asado de Res al Jugo","Carne de res asada en su jugo.",16.90,"image/sandwich1.jpg"],
-    ["Chicharrón","Chicharrón crocante de cerdo, receta de casa.",15.90,"image/sandwich1.jpg"],
-    ["Jamón del País","Jamón del país con cremas criollas.",13.90,"image/sandwich1.jpg"],
-    ["Jamón Serrano","Jamón serrano premium con cremas selectas.",15.90,"image/sandwich1.jpg"],
-    ["Hamburguesa","Receta cargada con queso fundido.",14.90,"image/sandwich1.jpg"],
-    ["Pollo a la Leña","Pollo asado a la leña, jugoso por dentro.",14.90,"image/sandwich1.jpg"],
-    ["Pollo Deshilachado","Pollo deshilachado en salsa criolla.",14.90,"image/sandwich1.jpg"],
-    ["Pollo con Piña","Pollo con piña, dulce y salado.",14.90,"image/sandwich1.jpg"],
+    ["Lechón a la Leña","Lechón cocido lentamente, jugoso y crocante.",16.90,"image/sandwich2.jpg"],
+    ["Asado de Res al Jugo","Carne de res asada en su jugo.",16.90,"image/sandwich3.jpg"],
+    ["Chicharrón","Chicharrón crocante de cerdo, receta de casa.",15.90,"image/sandwich4.jpg"],
+    ["Jamón del País","Jamón del país con cremas criollas.",13.90,"image/sandwich5.jpg"],
+    ["Jamón Serrano","Jamón serrano premium con cremas selectas.",15.90,"image/sandwich6.jpg"],
+    ["Hamburguesa","Receta cargada con queso fundido.",14.90,"image/sandwich7.jpg"],
+    ["Pollo a la Leña","Pollo asado a la leña, jugoso por dentro.",14.90,"image/sandwich8.jpg"],
+    ["Pollo Deshilachado","Pollo deshilachado en salsa criolla.",14.90,"image/sandwich9.jpg"],
+    ["Pollo con Piña","Pollo con piña, dulce y salado.",14.90,"image/sandwich10.jpg"],
     ["Mixto","Jamón y queso a la parrilla.",15.90,"image/sandwich1.jpg"],
-    ["El Preferido","El favorito de la casa.",16.90,"image/sandwich1.jpg"],
-    ["Mixto Serrano","Jamón serrano, queso y cremas.",16.90,"image/sandwich1.jpg"],
-    ["La Lucha","Receta especial con queso fundido y salsa secreta.",19.90,"image/sandwich1.jpg"],
-    ["Club Sandwich","Doble pan, pollo, jamón, tocino, queso y huevo.",19.90,"image/sandwich1.jpg"],
-    ["Club a la Leña","Club sandwich con toque ahumado.",19.90,"image/sandwich1.jpg"],
-    ["Panini Atún","Panini de atún, toque mediterráneo.",17.90,"image/sandwich1.jpg"]
+    ["El Preferido","El favorito de la casa.",16.90,"image/sandwich2.jpg"],
+    ["Mixto Serrano","Jamón serrano, queso y cremas.",16.90,"image/sandwich3.jpg"],
+    ["La Lucha","Receta especial con queso fundido y salsa secreta.",19.90,"image/sandwich4.jpg"],
+    ["Club Sandwich","Doble pan, pollo, jamón, tocino, queso y huevo.",19.90,"image/sandwich5.jpg"],
+    ["Club a la Leña","Club sandwich con toque ahumado.",19.90,"image/sandwich6.jpg"],
+    ["Panini Atún","Panini de atún, toque mediterráneo.",17.90,"image/sandwich7.jpg"]
   ],
   papas: [
     ["Promo Papas + Sanguche","Papas fritas crocantes de acompañamiento.",4.90,"image/papas1.jpg"],
@@ -25,10 +25,10 @@ var menu = {
   ],
   bebidas: [
     ["Chicha Morada","Refrescante chicha morada de la casa.",6.90,"image/bebida1.jpg"],
-    ["Limonada","Limonada clásica bien helada.",6.90,"image/bebida1.jpg"],
-    ["Inca Kola 500ml","Bebida gaseosa peruana.",5.50,"image/bebida1.jpg"],
-    ["Jugo de Lúcuma","Cremoso jugo natural con leche.",11.40,"image/bebida1.jpg"],
-    ["Jugo de Maracuyá","Jugo natural de maracuyá bien frío.",8.40,"image/bebida1.jpg"]
+    ["Limonada","Limonada clásica bien helada.",6.90,"image/bebida2.jpg"],
+    ["Inca Kola 500ml","Bebida gaseosa peruana.",5.50,"image/bebida3.jpg"],
+    ["Jugo de Lúcuma","Cremoso jugo natural con leche.",11.40,"image/bebida4.jpg"],
+    ["Jugo de Maracuyá","Jugo natural de maracuyá bien frío.",8.40,"image/bebida5.jpg"]
   ]
 };
 
