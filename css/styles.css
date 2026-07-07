@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@600;700&display=swap');
+
+:root{
+    --rojo:#a8121a;
+    --negro:#1a1a1a;
+    --crema:#f7f3ec;
+}
+
+body{
+    background:var(--crema);
+    color:var(--negro);
+    font-family:'Playfair Display',serif;
+    scroll-behavior:smooth;
+}
+
+@keyframes levantar{
+    from{ transform:translateY(0); box-shadow:0 4px 10px rgba(0,0,0,.08); }
+    to{ transform:translateY(-6px); box-shadow:0 10px 20px rgba(0,0,0,.15); }
+}
+
+@keyframes levantarFoto{
+    from{ transform:translateY(0) scale(1); }
+    to{ transform:translateY(-6px) scale(1.02); }
+}
+
+@keyframes deslizar{
+    from{ transform:translateX(0); }
+    to{ transform:translateX(4px); }
+}
+
+@keyframes botonHover{
+    from{ transform:translateY(0); box-shadow:none; }
+    to{ transform:translateY(-3px); box-shadow:0 6px 14px rgba(0,0,0,.3); }
+}
+
+.navbar{
+    background:transparent;
+    transition:background .3s, box-shadow .3s;
+    padding-top:14px;
+}
+.navbar.navbar-solida{
+    background:var(--negro);
+    box-shadow:0 2px 10px rgba(0,0,0,.3);
+    padding-top:6px;
+}
+
+.logo-centro{
+    position:absolute;
+    left:50%;
+    top:2px;
+    transform:translateX(-50%);
+    background:var(--negro);
+    border-radius:50%;
+    padding:8px;
+    border:3px solid var(--rojo);
+    z-index:10;
+    box-shadow:0 3px 10px rgba(0,0,0,.35);
+    transition:top .3s;
+}
+.navbar.navbar-solida .logo-centro{ top:-2px; }
+.logo-centro img{ height:48px; display:block; }
+
+.nav-link{
+    color:#fff !important;
+    font-weight:600;
+    text-shadow:0 1px 3px rgba(0,0,0,.6);
+}
+.nav-link:hover{ color:var(--rojo) !important; }
+
+.hero{
+    background:linear-gradient(rgba(20,0,0,.6),rgba(20,0,0,.75)), url('../image/banner.jpg') center/cover;
+    color:#fff;
+    text-align:center;
+    padding:180px 0 120px;
+    position:relative;
+}
+.hero::after{
+    content:'';
+    position:absolute;
+    bottom:0; left:0; right:0;
+    height:6px;
+    background:var(--rojo);
+}
+.hero h1{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:5.5rem;
+    letter-spacing:6px;
+    color:#fff;
+    text-shadow:0 0 20px var(--rojo), 0 4px 10px rgba(0,0,0,.6);
+}
+.hero .lead{
+    font-size:1.3rem;
+    letter-spacing:1px;
+}
+
+.titulo-seccion{
+    font-family:'Bebas Neue',sans-serif;
+    letter-spacing:2px;
+    text-align:center;
+    margin:40px 0 30px;
+    position:relative;
+    display:block;
+}
+.titulo-seccion::after{
+    content:'';
+    display:block;
+    width:70px;
+    height:4px;
+    background:var(--rojo);
+    margin:10px auto 0;
+    border-radius:2px;
+}
+.seccion-pedido .titulo-seccion::after{ background:#fff; }
+
+.seccion-nosotros{ background:var(--crema); }
+.seccion-productos{ background:#fff; }
+.seccion-pedido{
+    background:var(--rojo);
+    color:#fff;
+}
+.seccion-pedido .titulo-seccion{ color:#fff; }
+.seccion-ubicanos{
+    background:var(--negro);
+    color:#fff;
+}
+.seccion-ubicanos .titulo-seccion{ color:#fff; }
+.seccion-ubicanos .local-item{ color:var(--negro); }
+
+.tab-cat{
+    border:2px solid var(--rojo);
+    color:var(--rojo);
+    background:#fff;
+    border-radius:30px;
+    padding:6px 20px;
+    margin:4px;
+    transition:.2s;
+}
+.tab-cat.active,
+.tab-cat:hover{
+    background:var(--rojo);
+    color:#fff;
+    animation:botonHover .2s forwards;
+}
+
+.card-lucha{
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+    overflow:hidden;
+    height:100%;
+}
+.card-lucha:hover{
+    animation:levantar .25s forwards;
+}
+.card-lucha img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+}
+.card-lucha .card-body{ padding:12px 14px; }
+.card-title{ font-weight:700; }
+.card-desc{
+    font-size:.85rem;
+    color:#555;
+}
+.precio{
+    color:var(--rojo);
+    font-weight:700;
+}
+
+.foto-nosotros:hover{
+    animation:levantarFoto .3s forwards;
+    box-shadow:0 14px 26px rgba(0,0,0,.25);
+}
+
+.btn-lucha{
+    background:var(--rojo);
+    color:#fff;
+    border-radius:30px;
+    transition:.2s;
+}
+.btn-lucha:hover{
+    background:#7e0e14;
+    color:#fff;
+    animation:botonHover .2s forwards;
+}
+
+.btn-wsp{
+    background:#128C7E;
+    color:#fff;
+    border-radius:30px;
+    transition:.2s;
+}
+.btn-wsp:hover{
+    background:#0b5c52;
+    color:#fff;
+    animation:botonHover .2s forwards;
+}
+
+.local-item{
+    background:#fff;
+    border-radius:8px;
+    padding:10px 14px;
+    margin-bottom:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,.06);
+    cursor:pointer;
+}
+.local-item:hover{
+    animation:deslizar .2s forwards;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+.local-item.activo{ border-left:4px solid var(--rojo); }
+
+footer{
+    background:var(--negro);
+    color:#fff;
+    text-align:center;
+    padding:24px 0;
+    margin-top:0;
+    border-top:4px solid var(--rojo);
+}
